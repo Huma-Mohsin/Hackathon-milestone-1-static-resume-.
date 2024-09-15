@@ -1,0 +1,395 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+}
+
+/*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+Definition: This property specifies the font stack used for text within the body element.
+
+background-color: #f7f9fc;
+Definition: This property sets the background color of the body element.
+Explanation:
+#f7f9fc: A very light grayish-blue color. This light color provides a subtle, clean background that enhances contrast and readability while reducing glare.
+
+margin: 0;
+Definition: This property sets the margin (the space outside the border) of the body element.
+Explanation:
+0: Removes the default margin that browsers typically apply around the body. This ensures that the content starts at the very edge of the viewport, allowing for a full-width layout.
+
+padding: 0;
+Definition: This property sets the padding (the space inside the border) of the body element.
+Explanation:
+0: Removes the default padding that browsers may apply. This ensures that there is no extra space inside the body element, allowing for a cleaner, edge-to-edge layout.*/
+
+/* Container for Resume */
+.Resumebody {
+    display: flex;
+    background-color: #ffffff;
+    width: 70%;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/*display: flex;
+Definition: This property sets the display mode of the .Resumebody element.
+Explanation:
+flex: Applies Flexbox layout to the .Resumebody element, allowing its child elements (e.g., .Left_Section and .Right-Section) to be arranged in a flexible layout. This helps in aligning and distributing space among the child elements efficiently.
+
+
+background-color: #ffffff;
+Definition: This property sets the background color of the .Resumebody element.
+Explanation:
+#ffffff: Sets the background color to white. This provides a clean and neutral background that contrasts well with text and other content.
+
+width: 70%;
+Definition: This property sets the width of the .Resumebody element as a percentage of its containing element.
+Explanation:
+70%: Makes the .Resumebody 70% of the width of its parent element (typically the viewport or a container). This allows for margins on either side, centering the resume body within the page.
+
+
+margin: 30px auto;
+Definition: This property sets the margins around the .Resumebody element.
+Explanation:
+30px auto: Sets a top and bottom margin of 30 pixels and an automatic left and right margin. The auto value centers the element horizontally within its parent container, while the 30px top and bottom margins create spacing above and below the .Resumebody.
+
+border-radius: 12px;
+Definition: This property rounds the corners of the .Resumebody element.
+Explanation:
+12px: Applies a radius of 12 pixels to each corner of the .Resumebody, giving it a softened, rounded appearance. This adds a modern and visually appealing touch.
+
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+Definition: This property adds a shadow effect to the .Resumebody element.
+Explanation:
+0 4px 12px rgba(0, 0, 0, 0.1): Creates a shadow with no horizontal offset, a vertical offset of 4 pixels, a blur radius of 12 pixels, and a light black color with 10% opacity. This shadow gives the .Resumebody a subtle lift and depth effect, making it stand out against the background.
+
+padding: 20px;
+Definition: This property sets the padding inside the .Resumebody element.
+Explanation:
+20px: Adds 20 pixels of padding to all sides inside the .Resumebody. This creates space between the content and the border of the element, ensuring that the content doesn’t touch the edges and has a more balanced layout.*/
+
+/* Left Section Styling */
+.Left_Section {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    width: 30%;
+    border-right: 4px solid #3498db;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adds space between sections */
+   
+}
+
+/*background-color: #2c3e50;
+Definition: This property sets the background color of the .Left_Section element.
+Explanation:
+#2c3e50: Sets a dark blue-grey color as the background. This provides a strong contrast with the text color and adds a professional, modern look.
+
+
+color: #ecf0f1;
+Definition: This property sets the text color within the .Left_Section element.
+Explanation:
+#ecf0f1: Uses a light grey color for text, which contrasts well with the dark background, enhancing readability and maintaining a clean appearance.
+
+padding: 20px;
+Definition: This property adds padding inside the .Left_Section element.
+Explanation:
+20px: Adds 20 pixels of padding to all sides inside the .Left_Section. This creates space between the content and the edges of the section, ensuring the text and other elements are not too close to the borders.
+
+width: 30%;
+Definition: This property sets the width of the .Left_Section element as a percentage of its parent element.
+Explanation:
+30%: Allocates 30% of the width of the parent container (e.g., .Resumebody) to the .Left_Section. This ensures that the left section takes up a fixed portion of the container's width.
+
+border-right: 4px solid #3498db;
+Definition: This property adds a border to the right side of the .Left_Section element.
+Explanation:
+4px solid #3498db: Creates a solid, 4-pixel-wide border with a bright blue color (#3498db) on the right side of the section. This visually separates the left section from the right section and adds a touch of color to match the design theme.
+
+display: flex;
+Definition: This property sets the display mode of the .Left_Section element.
+Explanation:
+flex: Applies Flexbox layout to the .Left_Section, allowing for flexible arrangement of its child elements.
+
+flex-direction: column;
+Definition: This property specifies the direction of the child elements in the .Left_Section when using Flexbox.
+Explanation:
+column: Arranges the child elements in a vertical column. This is useful for stacking elements such as headings, text, and lists vertically.
+
+gap: 20px;
+Definition: This property sets the spacing between flex items in the .Left_Section.
+Explanation:
+20px: Adds 20 pixels of space between each child element within the .Left_Section. This improves the visual separation between sections, preventing elements from appearing too cramped.*/
+
+/* Profile Picture Styling */
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #3498db;
+    margin: 0 auto 20px;
+    display: block;
+}
+/*width: 100px;
+Definition: This property sets the width of the .profile-picture element.
+Explanation:
+100px: Specifies that the profile picture should have a width of 100 pixels. This ensures a consistent and fixed size for the image.
+
+height: 100px;
+Definition: This property sets the height of the .profile-picture element.
+Explanation:
+100px: Specifies that the profile picture should have a height of 100 pixels. By setting both width and height to the same value, the image will be square, which is ideal for a profile picture.
+
+border-radius: 50%;
+Definition: This property rounds the corners of the .profile-picture element.
+Explanation:
+50%: Sets the border radius to 50% of the width/height, creating a circular shape. This is commonly used for profile pictures to give a rounded appearance.
+
+border: 4px solid #3498db;
+Definition: This property adds a border around the .profile-picture element.
+Explanation:
+4px solid #3498db: Creates a solid border that is 4 pixels wide with a bright blue color (#3498db). This border adds emphasis and a touch of color that aligns with the design theme.
+
+margin: 0 auto 20px;
+Definition: This property sets the margin around the .profile-picture element.
+Explanation:
+0 auto 20px:
+0 (top margin): No space at the top of the element.
+auto (left and right margins): Centers the profile picture horizontally within its container.
+20px (bottom margin): Adds 20 pixels of space below the profile picture to separate it from any content beneath.
+
+display: block;
+Definition: This property specifies the display type of the .profile-picture element.
+Explanation:
+block: Makes the profile picture a block-level element. This ensures it occupies the full width available (in this case, centered horizontally with auto margins) and allows vertical margins to be applied.*/
+
+/* Header Styling */
+h1 {
+    font-size: 32px;
+    margin: 20px 0;
+    text-align: center;
+    color: #2c3e50;
+}
+/*font-size: 32px;
+Definition: This property sets the size of the font used for the h1 heading.
+Explanation:
+32px: Specifies that the font size should be 32 pixels. This size is typically used for main headings to make them prominent and easily readable.
+
+margin: 20px 0;
+Definition: This property sets the margin around the h1 element.
+Explanation:
+20px 0:
+20px (top and bottom margins): Adds 20 pixels of space above and below the heading. This creates separation from other elements and improves visual hierarchy.
+0 (left and right margins): No additional space on the left and right sides, ensuring the heading is aligned properly within its container.
+
+text-align: center;
+Definition: This property sets the horizontal alignment of the text within the h1 element.
+Explanation:
+center: Aligns the text to the center of the element. This is often used for headings to make them visually balanced and central within the container.
+
+color: #2c3e50;
+Definition: This property sets the color of the text within the h1 element.
+Explanation:
+#2c3e50: Specifies a dark grey-blue color. This color is neutral and professional, providing good contrast against lighter backgrounds and enhancing readability.*/
+
+/* Section Headers (h3) */
+h3 {
+    font-size: 22px;
+    padding: 10px 15px;
+    margin: 20px 0;
+    color: #2c3e50;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ecf0f1;
+    text-align: center;
+} /*font-size: 22px;
+Definition: This property sets the size of the font used for the h3 heading.
+Explanation:
+22px: Specifies that the font size should be 22 pixels. This size is slightly smaller than the h1 but still prominent enough for section headings, ensuring they stand out without overpowering the main heading.
+
+padding: 10px 15px;
+Definition: This property sets the space inside the h3 element, around the text.
+Explanation:
+10px 15px:
+10px (top and bottom padding): Adds 10 pixels of space above and below the text inside the heading.
+15px (left and right padding): Adds 15 pixels of space on the left and right sides of the text, giving it some breathing room and improving readability.
+
+margin: 20px 0;
+Definition: This property sets the margin around the h3 element.
+Explanation:
+20px 0:
+20px (top and bottom margins): Adds 20 pixels of space above and below the heading, providing separation from other elements.
+0 (left and right margins): No additional space on the sides, ensuring the heading aligns neatly within its container.
+
+color: #2c3e50;
+Definition: This property sets the color of the text within the h3 element.
+Explanation:
+#2c3e50: Specifies a dark grey-blue color. This color is neutral and professional, offering good contrast against the light background and maintaining readability.
+
+border-radius: 6px;
+Definition: This property rounds the corners of the h3 element.
+Explanation:
+6px: Sets a radius of 6 pixels for the corners, giving the heading a slightly rounded appearance which adds a modern and soft touch.
+
+box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+Definition: This property adds a shadow effect around the h3 element.
+Explanation:
+0 3px 6px rgba(0, 0, 0, 0.1):
+0: Horizontal offset of the shadow (no offset).
+3px: Vertical offset of the shadow, moving it 3 pixels down.
+6px: Blur radius, causing the shadow to spread out 6 pixels.
+rgba(0, 0, 0, 0.1): Color of the shadow, a very light black with 10% opacity, creating a subtle shadow effect for depth.
+
+background-color: #ecf0f1;
+Definition: This property sets the background color of the h3 element.
+Explanation:
+#ecf0f1: Specifies a very light grey color. This background color contrasts with the text color, making the heading stand out while remaining soft and professional.
+
+text-align: center;
+Definition: This property sets the horizontal alignment of the text within the h3 element.
+Explanation:
+center: Centers the text within the h3 element. This alignment is often used for section headings to create a balanced and centered appearance.*/
+
+/* Unordered Lists */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+/*list-style-type: disc;
+Definition: This property specifies the type of bullet point to use for the list items in an unordered list.
+Explanation:
+disc: This value sets the bullet points to be solid circles. It's the default style for unordered lists and is a common choice for providing clear and simple visual markers for each list item.
+
+padding-left: 20px;
+Definition: This property sets the space between the left edge of the ul element and its content (the list items).
+Explanation:
+20px: Adds 20 pixels of space on the left side of the unordered list. This padding ensures that the bullet points and the text of the list items are not flush with the left edge of the container, providing a clearer and more aesthetically pleasing layout.
+
+margin: 10px 0;
+Definition: This property sets the margin around the ul element.
+Explanation:
+10px 0:
+10px (top and bottom margins): Adds 10 pixels of space above and below the unordered list. This margin creates separation between the list and other elements, helping to improve readability and prevent visual clutter.
+0 (left and right margins): No additional space on the sides of the list. This ensures that the list is aligned with the container's edges, maintaining a clean and consistent layout.*/
+
+/* List Items */
+ul li {
+    margin: 6px 0;
+}
+/*margin: 6px 0;
+Definition: This property sets the margin around each li (list item) within the ul (unordered list) element.
+Explanation:
+6px: Adds 6 pixels of vertical margin above and below each list item. This creates space between individual list items, improving readability and preventing the items from appearing too crowded.
+0: No additional horizontal margin on the left and right sides of the list items. This ensures that the items are aligned with the container and the padding set for the ul element.*/
+
+
+/* Right Section Styling */
+.Right-Section {
+    padding: 20px;
+    width: 70%;
+    background-color: #ffffff;
+}
+/*padding: 20px;
+Definition: Sets the padding inside the .Right-Section element.
+Explanation:
+20px: Adds 20 pixels of padding on all sides (top, right, bottom, and left) of the .Right-Section. This creates space between the content and the edges of the section, improving readability and ensuring that the content does not touch the edges.
+
+width: 70%;
+Definition: Sets the width of the .Right-Section element relative to its parent container.
+Explanation:
+70%: Specifies that the .Right-Section should occupy 70% of the width of its parent element. This allows the section to take up a significant portion of the available horizontal space, contributing to a balanced layout, especially when paired with other sections of the resume.
+
+background-color: #ffffff;
+Definition: Sets the background color of the .Right-Section element.
+Explanation:
+#ffffff: Applies a white background color to the .Right-Section. This color choice provides a clean and neutral backdrop that enhances readability and maintains a professional appearance.*/
+
+/* Button Styling */
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+/*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+Definition: Specifies the font used for the button text.
+Explanation:
+This sets a stack of fonts starting with 'Segoe UI'. If 'Segoe UI' is unavailable, it will fall back to 'Tahoma', 'Geneva', 'Verdana', and finally to any generic sans-serif font. This ensures consistent text rendering across different platforms and browsers.
+
+border-radius: 8px;
+Definition: Rounds the corners of the button.
+Explanation:
+8px: Applies an 8-pixel radius to the button's corners, giving it a rounded appearance. This adds a modern, approachable look to the button.
+
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+Definition: Adds a shadow effect to the button.
+Explanation:
+0 4px 8px rgba(0, 0, 0, 0.1): Creates a shadow that is offset by 4 pixels vertically, has a blur radius of 8 pixels, and is colored with a semi-transparent black (rgba(0, 0, 0, 0.1)). This gives the button a subtle, elevated look.
+
+cursor: pointer;
+Definition: Changes the cursor to a pointer when hovering over the button.
+Explanation:
+pointer: Indicates that the button is clickable, providing a visual cue to users.
+
+margin-top: 15px;
+Definition: Adds space above the button.
+Explanation:
+15px: Creates a 15-pixel space between the button and any content above it, helping to separate it from other elements and improve layout spacing.
+
+font-size: 16px;
+Definition: Sets the size of the button text.
+Explanation:
+16px: Specifies a 16-pixel font size, making the text within the button readable and visually appealing.
+
+background-color: #3498db;
+Definition: Sets the background color of the button.
+Explanation:
+#3498db: Applies a medium blue color to the button's background, which is often associated with action and is visually appealing.
+
+color: #ffffff;
+Definition: Sets the text color of the button.
+Explanation:
+#ffffff: Applies a white color to the button text, ensuring good contrast and readability against the blue background.
+
+border: none;
+Definition: Removes the default border around the button.
+Explanation:
+none: Eliminates the default browser border, allowing for a cleaner appearance and making way for custom styling.
+
+padding: 12px 24px;
+Definition: Adds space inside the button.
+Explanation:
+12px 24px: Applies 12 pixels of padding vertically (top and bottom) and 24 pixels horizontally (left and right), creating a comfortable clickable area and ensuring the button text is well-spaced within the button.
+
+transition: background-color 0.3s, box-shadow 0.3s;
+Definition: Smoothly animates changes to specific properties.
+Explanation:
+background-color 0.3s, box-shadow 0.3s: Creates a 0.3-second transition effect for changes to the background color and box shadow, enhancing the button's interactivity and providing a polished visual effect when hovering or interacting with the button.*/
+
+button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+/*background-color: #2980b9;
+Definition: Changes the background color of the button when hovered over.
+Explanation:
+#2980b9: Applies a darker shade of blue to the button’s background. This visual change provides feedback to users that the button is interactive, indicating it can be clicked.
+
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+Definition: Alters the shadow effect of the button on hover.
+Explanation:
+0 6px 12px rgba(0, 0, 0, 0.15): Adjusts the shadow to be more pronounced on hover. It is offset by 6 pixels vertically, with a blur radius of 12 pixels and a semi-transparent black color (rgba(0, 0, 0, 0.15)). This effect creates a deeper shadow, giving the impression that the button is being pressed or elevated when hovered, enhancing its visual feedback.*/
